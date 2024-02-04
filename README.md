@@ -8,20 +8,20 @@ The source code for this project is hosted on GitHub. You can find it [here](htt
 The Nasa Api APOD Spring API Project is a Spring Boot application designed to interact with NASA's Astronomy Picture of the Day (APOD) API. It serves as a versatile tool for fetching and displaying space-related content, offering a range of features to cater to different user needs.
 
 
-## Key Features:##
+## Key Features: ##
 
 
 - Flexible Query Parameters: The API supports various query parameters such as date, start date, end date, count, high-definition content retrieval (hd), and inclusion of thumbnail URLs for videos (thumbs).
 - Ease of Integration: The project is built on Spring Boot, providing a robust and easily extensible framework for integrating with NASA's APOD API.
 - Detailed Endpoint Documentation: The README includes a comprehensive guide to the available endpoints, complete with examples and screenshots.
 
-## Project Structure:##
+## Project Structure: ##
 
 NasaController: This class contains the endpoint mappings for interacting with the NASA APOD API. It handles incoming requests and communicates with the NasaService to fetch data.
 
 NasaService: The service class is responsible for interacting with the NASA APOD API. It utilizes a RestTemplate to make HTTP requests and handles the logic for parsing and processing API responses.
 
-## NASA API Endpoint
+## NASA API Endpoint: ##
 
 The project includes endpoint to retrieve information from NASA's Astronomy Picture of the Day (APOD) API.
 
