@@ -11,5 +11,6 @@ public class NasaApiResponse {
 	private String service_version;
 	private String title;
 	private String url;
+	private String thumbnailUrl; // Useful if mediaType is "video" and thumbs=true
+
 }
-   
