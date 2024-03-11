@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List; // Import List
 
 @RestController
-//@RequestMapping("/api")
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 public class NasaController {
 

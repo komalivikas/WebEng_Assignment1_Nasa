@@ -1,3 +1,112 @@
+# React Nasa API : Assignment2
+## Continuation of Assignment1: Nasa Api APOD Spring API Project
+
+This project serves as a continuation of Assignment1: Nasa Api APOD Spring API Project. The backend API project can be found in the [WE_Assignment1](https://github.com/komalivikas/WE_Assignment1) repository, specifically in the `src/main/java` folder. The React frontend project (Assignment2) is located in the [WE_Assignment1](https://github.com/komalivikas/WE_Assignment1) repository specifically in `WE_Assignment1/NasaFrontEnd` directory.
+
+# NASA Image Viewer App
+
+This is a React application that allows users to explore NASA's Astronomy Picture of the Day (APOD) images. The app provides features such as selecting a specific date, choosing a date range, and fetching images based on the count.
+
+## Features
+
+- Select a specific date to view the APOD image for that day.
+- Choose a date range to fetch APOD images within that period.
+- Fetch a specific number of APOD images.
+- Clear inputs and get feedback when inputs are cleared.
+- Validate selected date to ensure it's today's date or a previous date.
+
+## Table of Contents
+
+- Installation
+- Usage
+- Routes
+- Features
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/komalivikas/WebEng_Assignment1_Nasa.git
+
+2. Install dependencies:
+
+	npm install
+
+ 	Run the application:
+
+	npm start
+
+The app will be accessible at http://localhost:3000/new-page.
+
+3. Usage:
+
+This React app provides a user interface to interact with the NASA API by communicating with a Spring Boot backend. It includes the following features:
+
+- Access the app at http://localhost:3000/new-page.
+
+![Alt Text](Images/Homepage_new-page.png)
+
+
+- Select a date to fetch the NASA Astronomy Picture of the Day (APOD).
+
+![Alt Text](Images/SelectDate.png)
+
+
+- Specify a date range (from and to dates) to fetch images between certain dates.
+
+![Alt Text](Images/FromDate_ToDate.png)
+
+
+- Input the count of images to retrieve.
+
+![Alt Text](Images/Image_Count.png)
+
+
+- Clear button to reset all input fields.
+
+![Alt Text](Images/ClearFunction.png)
+
+
+- Ensuring selected date is today's date or a previous date. If a future date is selected, it displays a message
+
+![Alt Text](Images/FutureDate.png)
+
+ 
+- Feedback messages for various actions.
+
+**Note:** When accessing the `/new-page` route (http://localhost:3000/new-page), it will automatically fetch and display today's information. Subsequent interactions, such as entering a start date, end date, or count, will update the displayed information accordingly. Clicking the "Clear" button will reset the inputs and display today's information again.
+
+The React frontend communicates with the Spring Boot backend through API calls, enabling seamless integration between the backend and the user interface.
+
+4. Routes
+
+The app has multiple routes for navigation:
+
+- `/`: Home page with XKCD comics (previous functionality).
+- `/new-page`: New page for NASA API connections.
+
+5. Features
+- React Router Integration: Utilizes react-router-dom for navigation.
+- Outlet Usage: Maintains a consistent navigation structure.
+- Input Fields:
+	- Select Date
+	- From Date
+	- To Date
+	- Image Count
+- NASA API Connections:
+	- Fetches data based on selected date, date range, and image count.
+	- Maps through responses to display information.
+- Validation:
+	- Ensures selected date is today's date or a previous date.
+	- Displays a message for future date selections.
+- Clear Button Feedback: Provides feedback when the "Clear" button is clicked.
+
+
+===========================================
+
+# Assignment1:
+
 # Nasa Api APOD Spring API Project
 
 ## Project Repository
