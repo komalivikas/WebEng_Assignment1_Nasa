@@ -1,7 +1,7 @@
 # React Nasa API : Assignment2
 ## Continuation of Assignment1: Nasa Api APOD Spring API Project
 
-This project serves as a continuation of Assignment1: Nasa Api APOD Spring API Project. The backend API project can be found in the [WE_Assignment1](https://github.com/komalivikas/WE_Assignment1) repository, specifically in the `src/main/java` folder. The React frontend project (Assignment2) is located in the [WE_Assignment1](https://github.com/komalivikas/WE_Assignment1) repository specifically in `WE_Assignment1/NasaFrontEnd` directory.
+This project serves as a continuation of Assignment1: Nasa Api APOD Spring API Project. The backend API project can be found in the [WE_Assignment1](https://github.com/komalivikas/WE_Assignment1) repository, specifically in the `src/main/java` folder. The React frontend project (Assignment2) is located in the [WE_Assignment1](https://github.com/komalivikas/WE_Assignment1) repository specifically in `WE_Assignment1/NasaFrontEnd` folder.
 
 # NASA Image Viewer App
 
@@ -14,6 +14,12 @@ This is a React application that allows users to explore NASA's Astronomy Pictur
 - Fetch a specific number of APOD images.
 - Clear inputs and get feedback when inputs are cleared.
 - Validate selected date to ensure it's today's date or a previous date.
+
+**Displayed Items:**
+- Title
+- Date
+- Description
+- Image
 
 ## Table of Contents
 
