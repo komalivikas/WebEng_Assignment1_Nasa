@@ -54,18 +54,10 @@ const NasaNewPage = () => {
       const fetchData = async () => {
         try {
           setLoading(true);
-  
-    // Log parameters before making the request
-    console.log('Selected Date: ', selectedDate);
-    console.log('From Date: ', fromDate);
-    console.log('To Date: ', toDate);
-    console.log('Image Count: ', count);
 
     var response = null;
 // Ensure selectedDate is not null before making the request
 if (selectedDate != "_") {
-    console.log('THIS IS THE IF STATEMENT:');
-    console.log('SELECTD DATE:', selectedDate);
     // Format the dates here before sending them in the request
     const formattedFromDate = fromDate || '';
     const formattedToDate = toDate || '';
@@ -75,38 +67,20 @@ if (selectedDate != "_") {
             },
           });
 
-        console.log('Formatted Selected Date:', formattedSelectedDate);
-        console.log('Formatted From Date:', formattedFromDate);
-        console.log('Formatted To Date:', formattedToDate);
-  
-    // Log the complete URL and the response
-    console.log('API URL:', response.config.url);
-    console.log('Response:', response.data);
-
-     // Log the data structure before processing it for rendering
-     console.log('Data Structure:', response.data);
-
           setData(response.data);
         } 
         
         else if (selectedDate=='_' && formattedFromDate != '_' && formattedToDate != '_') {
 
-            console.log('THIS IS THE ELSE-IF STATEMENT:');
-
             response = await axios.get('http://localhost:8080/nasa/apod?start_date='+formattedFromDate+'&end_date='+formattedToDate)  
-              console.log('Response:', response.data); 
               setData(response.data);
         } 
         else if(count>0) {
-            console.log('THIS IS THE ELSE STATEMENT:');
             response = await axios.get('http://localhost:8080/nasa/apod?count='+count)
-            console.log('Response:', response.data); 
             setData(response.data); 
 
         }
         else {
-            console.log('THIS IS THE LAST ELSE STATEMENT:');
-
             var today = new Date();
             var dd = String(today.getDate()).padStart(2, '0');
             var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
@@ -114,9 +88,7 @@ if (selectedDate != "_") {
 
             today = yyyy + '-' + mm + '-' + dd;
             response = await axios.get('http://localhost:8080/nasa/apod?date='+today)
-            console.log('Response:', response.data); 
             setData(response.data); 
-            console.log('today:', today); 
         }
         } catch (error) {
           setError(error);
